@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2e9">
+    <meta name="description" content="A source-first look at the people, places, and changing definitions behind Black demographics in the United States.">
+    <title>Rooted | A Field Guide to Black Demographics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+      {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"}}
+    </script>
+    <script type="module" src="tree-scene.js"></script>
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="wordmark" href="index.html" aria-label="Rooted home">
+          <span class="wordmark-mark" aria-hidden="true">r.</span>
+          <span>ROOTED</span>
+        </a>
+        <p class="topbar-note">A field guide to hard truths</p>
+        <button class="quote-contrast-link" id="show-featured-contrast" type="button" aria-controls="voice-name voice-second-quote voice-quote-context">Quote contrast <span aria-hidden="true">↘</span></button>
+        <a class="about-link" href="#about">The sources <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A PORTRAIT IN EVIDENCE</p>
+        <h1 id="page-title">The roots reveal<br>what headlines <em>hide.</em></h1>
+        <p class="intro-copy">Hard truths deserve more than a hot take. Every number here comes with its source, its year, and the context needed to read it straight.</p>
+      </section>
+
+      <section class="explorer" aria-label="Explore a demographic fact">
+        <div class="tree-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">THE LIVING DATA TREE</p>
+              <h2>Where the evidence grows</h2>
+            </div>
+            <span class="tree-index" aria-hidden="true">01 <i>/</i> 10</span>
+          </div>
+
+          <div class="tree-canvas">
+            <canvas id="tree-renderer" aria-hidden="true"></canvas>
+            <p class="tree-scene-message" id="tree-scene-message" role="status">Growing the scene…</p>
+            <svg class="tree-art" viewBox="0 0 560 470" role="img" aria-labelledby="tree-title tree-description">
+              <title id="tree-title">An ancient, luminous tree of demographic topics</title>
+              <desc id="tree-description">Five gold-marked branches connect to people, health, safety, learning, and family evidence.</desc>
+              <defs>
+                <linearGradient id="trunk" x1="0" x2="1" y1="1" y2="0">
+                  <stop offset="0" stop-color="#6b492b"/>
+                  <stop offset="0.52" stop-color="#c7a46a"/>
+                  <stop offset="1" stop-color="#f2d99a"/>
+                </linearGradient>
+                <linearGradient id="leaf" x1="0" x2="1" y1="1" y2="0">
+                  <stop offset="0" stop-color="#315e3d"/>
+                  <stop offset="0.58" stop-color="#78a85d"/>
+                  <stop offset="1" stop-color="#d0cc83"/>
+                </linearGradient>
+                <filter id="tree-glow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="3" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <g class="starfield" fill="#edcf8b" opacity=".8">
+                <path d="M93 76v8m-4-4h8M236 44v6m-3-3h6M487 124v7m-3.5-3.5h7M397 55v6m-3-3h6M120 247v5m-2.5-2.5h5M466 239v6m-3-3h6M221 153v5m-2.5-2.5h5"/>
+                <circle cx="133" cy="132" r="1.5"/><circle cx="434" cy="109" r="1.5"/><circle cx="306" cy="79" r="1.5"/><circle cx="176" cy="274" r="1.4"/><circle cx="462" cy="198" r="1.5"/>
+              </g>
+              <g class="tree-roots" fill="none" stroke="#b58b52" stroke-linecap="round" stroke-width="3">
+                <path d="M279 350 C263 382 246 396 219 415 M281 350 C294 382 321 399 349 416 M278 352 C279 389 278 407 276 430 M261 373 C242 382 223 382 205 375 M300 374 C324 382 345 379 360 372 M250 382 C231 402 217 405 197 407 M307 385 C329 406 349 409 370 405 M269 393 C258 412 251 420 237 428 M289 392 C300 411 308 421 324 429"/>
+                <path d="M279 350 C263 382 246 396 219 415 M281 350 C294 382 321 399 349 416" stroke="#e4c37d" stroke-width="1" opacity=".8"/>
+              </g>
+              <g class="tree-branches" fill="none" stroke="url(#trunk)" stroke-linecap="round" stroke-linejoin="round" filter="url(#tree-glow)">
+                <path stroke-width="17" d="M280 369 C278 311 284 266 280 220 C277 167 281 113 278 57"/>
+                <path stroke-width="11" d="M280 293 C246 266 206 242 169 203 C139 172 112 143 83 111"/>
+                <path stroke-width="9" d="M280 252 C322 224 354 196 386 163 C408 140 431 115 456 85"/>
+                <path stroke-width="8" d="M280 192 C243 165 221 139 203 111 C190 91 179 71 171 49"/>
+                <path stroke-width="8" d="M280 167 C310 138 329 110 342 82 C350 64 356 47 360 31"/>
+                <path stroke-width="6" d="M168 203 C154 199 139 198 123 201 M386 163 C404 168 420 167 438 162 M204 111 C188 111 174 105 162 96 M341 82 C355 87 369 86 382 80 M277 318 C244 307 215 294 189 274 M283 315 C319 303 344 287 369 263 M275 238 C251 228 232 211 220 191 M286 225 C317 214 334 197 348 178"/>
+                <path stroke="#f1d89b" stroke-width="1.4" opacity=".75" d="M279 365 C277 302 282 255 278 210 C276 155 280 105 278 61 M278 288 C242 260 205 236 166 198 M282 250 C321 221 354 193 385 160 M278 188 C243 160 221 137 202 108 M282 165 C309 136 329 108 341 80"/>
+              </g>
+              <g class="tree-leaves" fill="url(#leaf)">
+                <ellipse cx="85" cy="101" rx="28" ry="16" transform="rotate(38 85 101)"/>
+                <ellipse cx="153" cy="182" rx="25" ry="14" transform="rotate(40 153 182)"/>
+                <ellipse cx="471" cy="75" rx="27" ry="15" transform="rotate(-44 471 75)"/>
+                <ellipse cx="408" cy="143" rx="23" ry="14" transform="rotate(-34 408 143)"/>
+                <ellipse cx="161" cy="42" rx="25" ry="14" transform="rotate(63 161 42)"/>
+                <ellipse cx="367" cy="27" rx="25" ry="14" transform="rotate(-63 367 27)"/>
+                <ellipse cx="113" cy="198" rx="20" ry="12" transform="rotate(-14 113 198)"/>
+                <ellipse cx="448" cy="162" rx="20" ry="12" transform="rotate(15 448 162)"/>
+                <ellipse cx="162" cy="91" rx="18" ry="11" transform="rotate(23 162 91)"/>
+                <ellipse cx="383" cy="76" rx="18" ry="11" transform="rotate(-22 383 76)"/>
+                <ellipse cx="111" cy="135" rx="23" ry="12" transform="rotate(31 111 135)"/>
+                <ellipse cx="136" cy="163" rx="20" ry="11" transform="rotate(47 136 163)"/>
+                <ellipse cx="186" cy="220" rx="22" ry="12" transform="rotate(35 186 220)"/>
+                <ellipse cx="222" cy="248" rx="21" ry="11" transform="rotate(29 222 248)"/>
+                <ellipse cx="451" cy="105" rx="22" ry="12" transform="rotate(-36 451 105)"/>
+                <ellipse cx="423" cy="130" rx="19" ry="11" transform="rotate(-40 423 130)"/>
+                <ellipse cx="390" cy="163" rx="19" ry="11" transform="rotate(-34 390 163)"/>
+                <ellipse cx="355" cy="193" rx="21" ry="12" transform="rotate(-34 355 193)"/>
+                <ellipse cx="203" cy="78" rx="20" ry="11" transform="rotate(55 203 78)"/>
+                <ellipse cx="190" cy="139" rx="18" ry="10" transform="rotate(39 190 139)"/>
+                <ellipse cx="224" cy="169" rx="19" ry="11" transform="rotate(38 224 169)"/>
+                <ellipse cx="323" cy="130" rx="20" ry="11" transform="rotate(-47 323 130)"/>
+                <ellipse cx="334" cy="101" rx="19" ry="11" transform="rotate(-61 334 101)"/>
+                <ellipse cx="308" cy="170" rx="18" ry="10" transform="rotate(-42 308 170)"/>
+                <ellipse cx="257" cy="96" rx="18" ry="10" transform="rotate(28 257 96)"/>
+                <ellipse cx="297" cy="75" rx="19" ry="11" transform="rotate(-29 297 75)"/>
+              </g>
+              <g class="tree-node node-people" data-branch="people" role="button" tabindex="0" aria-label="Show population facts">
+                <circle cx="82" cy="110" r="19"/><text x="82" y="114">01</text>
+              </g>
+              <g class="tree-node node-health" data-branch="health" role="button" tabindex="0" aria-label="Show health facts">
+                <circle cx="171" cy="48" r="19"/><text x="171" y="52">02</text>
+              </g>
+              <g class="tree-node node-safety" data-branch="safety" role="button" tabindex="0" aria-label="Show safety facts">
+                <circle cx="460" cy="86" r="19"/><text x="460" y="90">03</text>
+              </g>
+              <g class="tree-node node-learning" data-branch="learning" role="button" tabindex="0" aria-label="Show learning facts">
+                <circle cx="362" cy="35" r="19"/><text x="362" y="39">04</text>
+              </g>
+              <g class="tree-node node-families" data-branch="families" role="button" tabindex="0" aria-label="Show family data facts">
+                <circle cx="436" cy="163" r="19"/><text x="436" y="167">05</text>
+              </g>
+            </svg>
+            <div class="tree-labels">
+              <button class="tree-topic label-people" type="button" data-branch="people"><b>PEOPLE</b><strong>46.9M</strong><small>Black population · 2020</small></button>
+              <button class="tree-topic label-health" type="button" data-branch="health"><b>HEALTH</b><strong>4.3×</strong><small>Abortion rate ratio · CDC</small></button>
+              <button class="tree-topic label-safety" type="button" data-branch="safety"><b>SAFETY</b><strong>21.3 / 100K</strong><small>Homicide victims · 2023</small></button>
+              <button class="tree-topic label-learning" type="button" data-branch="learning"><b>LEARNING</b><strong>−5 points</strong><small>Grade 8 reading · NAEP</small></button>
+              <button class="tree-topic label-families" type="button" data-branch="families"><b>FAMILIES</b><strong>81% by 40s</strong><small>Fathers reporting children</small></button>
+            </div>
+          </div>
+          <div class="tree-footer">
+            <span><i class="status-dot"></i> GROUNDED IN PUBLIC DATA</span>
+            <span class="tree-footer-year">2020 CENSUS</span>
+          </div>
+        </div>
+
+        <article class="fact-panel" aria-live="polite" aria-atomic="true">
+          <div class="fact-meta">
+            <span class="fact-kicker"><span class="fact-number">01</span><span id="fact-category">PEOPLE</span></span>
+            <span class="fact-date" id="fact-date">UNITED STATES · 2020</span>
+          </div>
+          <section class="voice-feature" aria-labelledby="voice-name">
+            <figure class="voice-portrait">
+              <img id="voice-portrait" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Frederick_Douglass_%28circa_1879%29.jpg/330px-Frederick_Douglass_%28circa_1879%29.jpg" alt="Portrait of Frederick Douglass" width="128" height="154">
+              <figcaption><a id="portrait-credit" href="https://commons.wikimedia.org/wiki/File:Frederick_Douglass_(circa_1879).jpg" target="_blank" rel="noreferrer">Portrait · Wikimedia Commons</a></figcaption>
+            </figure>
+            <div class="voice-copy">
+              <p class="voice-kicker"><span id="voice-angle">RESISTANCE AND PROGRESS</span><span id="daily-visit">TODAY · 01</span></p>
+              <blockquote id="voice-quote">“If there is no struggle, there is no progress.”</blockquote>
+              <p class="voice-name" id="voice-name">Frederick Douglass</p>
+              <a class="voice-source" id="voice-source" href="https://www.blackpast.org/african-american-history/1857-frederick-douglass-if-there-is-no-struggle-there-is-no-progress/" target="_blank" rel="noreferrer">Quote source · 1857 speech</a>
+            </div>
+          </section>
+          <section class="second-quote" id="second-quote" aria-labelledby="second-quote-label" hidden>
+            <p class="second-quote-label" id="second-quote-label">A SECOND LINE · SAME SPEAKER</p>
+            <blockquote id="voice-second-quote"></blockquote>
+            <a class="second-quote-source" id="voice-second-source" href="#" target="_blank" rel="noreferrer"></a>
+            <p class="quote-context" id="voice-quote-context"></p>
+          </section>
+          <div class="fact-content" id="fact-content">
+            <p class="fact-overline">THE DATA · ONE NUMBER, TWO DEFINITIONS</p>
+            <h2 id="fact-title">Loading a fact...</h2>
+            <p id="fact-detail" class="fact-detail"></p>
+          </div>
+          <div class="fact-source">
+            <span class="source-mark" aria-hidden="true">✧</span>
+            <div class="source-copy">
+              <p class="source-label">FOLLOW THE EVIDENCE</p>
+              <div class="source-links" id="source-links">
+                <a href="https://www.census.gov/library/publications/2023/decennial/c2020br-06.html" target="_blank" rel="noreferrer">U.S. Census Bureau · The Black Population: 2020</a>
+              </div>
+              <p id="source-note" class="source-note"></p>
+            </div>
+          </div>
+          <div class="fact-actions">
+            <span id="fact-count" class="fact-count">01 / 10</span>
+            <div class="fact-arrows">
+              <button class="arrow-button" id="previous-fact" type="button" aria-label="Previous fact" title="Previous fact">←</button>
+              <button class="arrow-button next-button" id="next-fact" type="button" aria-label="Next fact" title="Next fact">→</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="method-row" id="about" aria-labelledby="method-title">
+        <div class="method-icon" aria-hidden="true">✳</div>
+        <div>
+          <h2 id="method-title">A claim is only as strong as its evidence.</h2>
+          <p>Every conclusion stays tied to its population, denominator, and year. Claims about a named creator require traceable financial records or measurable outcomes; without them, we mark the claim unverified.</p>
+        </div>
+        <a class="method-link" href="https://www.census.gov/library/publications/2023/decennial/c2020br-06.html" target="_blank" rel="noreferrer">Read the Census brief <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <footer class="site-footer">
+        <span>ROOTED <span class="footer-dot">·</span> A PUBLIC DATA PROJECT</span>
+        <span>FACTS, WITH THEIR CONTEXT ATTACHED.</span>
+      </footer>
+    </main>
+  </body>
+</html>
