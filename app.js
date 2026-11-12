@@ -394,3 +394,74 @@ document.querySelector("#show-featured-contrast").addEventListener("click", () =
 });
 
 showFact(currentIndex);
+
+const accountabilityCases = [
+  {
+    id: "catherine-pugh",
+    kicker: "DOCUMENTED CONVICTION · BALTIMORE",
+    name: "Catherine Pugh",
+    finding: "Pugh pleaded guilty to federal fraud and tax offenses and was sentenced to 36 months in prison. Prosecutors said the Healthy Holly book scheme included about $800,000 in payments from the University of Maryland Medical System.",
+    context: "This case involved a book-sale fraud and Baltimore institutions; it does not establish that Black residents as a whole were the sole or direct victims.",
+    portrait: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Baltimore_Mayor_Pugh_%281%29.jpg/500px-Baltimore_Mayor_Pugh_%281%29.jpg",
+    portraitAlt: "Catherine Pugh, former Baltimore mayor",
+    portraitCredit: "Photo · Bruce Emmerling · CC BY-SA 4.0",
+    portraitUrl: "https://commons.wikimedia.org/wiki/File:Baltimore_Mayor_Pugh_(1).jpg",
+    sources: [
+      {
+        label: "U.S. DOJ · Pugh sentencing and case details",
+        url: "https://www.justice.gov/usao-md/pr/former-baltimore-mayor-catherine-pugh-sentenced-three-years-prison-federal-fraud-charges",
+      },
+    ],
+  },
+  {
+    id: "rudy-giuliani",
+    kicker: "CIVIL JURY FINDING · GEORGIA ELECTION WORKERS",
+    name: "Rudy Giuliani",
+    finding: "A federal civil jury found Giuliani liable for defaming Ruby Freeman and Shaye Moss, two Black election workers, after false election-fraud claims; the 2023 jury awarded $148.1 million in damages.",
+    context: "This is a civil defamation judgment about two people, not a criminal fraud conviction or a finding about Black voters as a whole.",
+    portrait: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Rudy_Giuliani_2025_%28cropped%29.jpg/500px-Rudy_Giuliani_2025_%28cropped%29.jpg",
+    portraitAlt: "Rudy Giuliani in 2025",
+    portraitCredit: "Photo · U.S. Department of Homeland Security · Public domain",
+    portraitUrl: "https://commons.wikimedia.org/wiki/File:Rudy_Giuliani_2025_(cropped).jpg",
+    sources: [
+      {
+        label: "Court docket · Freeman and Moss v. Giuliani",
+        url: "https://www.courtlistener.com/docket/66692927/freeman-v-giuliani/",
+      },
+    ],
+  },
+];
+
+const accountabilityStorageKey = "rooted-accountability-last-case";
+let previousAccountabilityId = "";
+try {
+  previousAccountabilityId = sessionStorage.getItem(accountabilityStorageKey) ?? "";
+} catch {
+  // Session storage is optional; the panel still chooses a random case.
+}
+const accountabilityChoices = accountabilityCases.filter((entry) => entry.id !== previousAccountabilityId);
+const accountabilityCase = accountabilityChoices[Math.floor(Math.random() * accountabilityChoices.length)];
+try {
+  sessionStorage.setItem(accountabilityStorageKey, accountabilityCase.id);
+} catch {
+  // Session storage is optional; the panel still renders.
+}
+
+document.querySelector("#accountability-kicker").textContent = accountabilityCase.kicker;
+document.querySelector("#accountability-name").textContent = accountabilityCase.name;
+document.querySelector("#accountability-finding").textContent = accountabilityCase.finding;
+document.querySelector("#accountability-context").textContent = accountabilityCase.context;
+const accountabilityPortrait = document.querySelector("#accountability-portrait");
+accountabilityPortrait.src = accountabilityCase.portrait;
+accountabilityPortrait.alt = accountabilityCase.portraitAlt;
+const accountabilityPhotoCredit = document.querySelector("#accountability-photo-credit");
+accountabilityPhotoCredit.href = accountabilityCase.portraitUrl;
+accountabilityPhotoCredit.textContent = accountabilityCase.portraitCredit;
+document.querySelector("#accountability-sources").replaceChildren(...accountabilityCase.sources.map((source) => {
+  const link = document.createElement("a");
+  link.href = source.url;
+  link.target = "_blank";
+  link.rel = "noreferrer";
+  link.textContent = source.label;
+  return link;
+}));
