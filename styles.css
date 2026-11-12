@@ -652,6 +652,24 @@ body {
   text-underline-offset: 3px;
 }
 
+.data-limit-callout {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border-left: 2px solid #d9b56b;
+  background: rgba(232, 224, 196, 0.06);
+  color: #c4c7b3;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.data-limit-callout strong {
+  color: #f0d99b;
+  font-family: "Cinzel", serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
 @media (max-width: 760px) {
   .charts-section { padding: 34px 0 30px; }
   .charts-heading { grid-template-columns: 1fr; gap: 10px; }
@@ -715,6 +733,32 @@ body {
   filter: grayscale(0.65) sepia(0.12) contrast(1.04);
 }
 
+.accountability-portrait img[hidden],
+.accountability-portrait-placeholder[hidden],
+#accountability-portrait-caption[hidden] {
+  display: none;
+}
+
+.accountability-portrait-placeholder {
+  display: grid;
+  min-height: 220px;
+  place-content: center;
+  border: 1px solid rgba(197, 167, 105, 0.3);
+  background: radial-gradient(circle at center, rgba(197, 167, 105, 0.18), rgba(11, 25, 18, 0.3) 68%);
+  color: #e8d29b;
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.accountability-portrait-placeholder small {
+  color: #b5b8a4;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.02em;
+}
+
 .accountability-portrait figcaption {
   padding-top: 6px;
   color: #aaa98f;
@@ -765,6 +809,7 @@ body {
   .accountability-section { padding: 30px 0; }
   .accountability-card { grid-template-columns: 110px minmax(0, 1fr); gap: 14px; padding: 14px; }
   .accountability-portrait img { max-height: 180px; }
+  .accountability-portrait-placeholder { min-height: 180px; font-size: 22px; }
   .accountability-details h3 { font-size: 18px; }
   .accountability-finding { font-size: 12px; }
 }

@@ -430,19 +430,374 @@ const accountabilityCases = [
       },
     ],
   },
+  {
+    id: "tyrone-brooks",
+    kicker: "GUILTY PLEA · GEORGIA",
+    name: "Tyrone Brooks",
+    finding: "The former Georgia state representative pleaded guilty to federal tax fraud and no contest to mail- and wire-fraud charges tied to about $1 million diverted from two nonprofits associated with him. He was sentenced to one year and one day in prison.",
+    context: "The case concerned Brooks's conduct and two nonprofits; it is not evidence about Georgia officials or Black community organizations generally. No appropriately licensed portrait was located for this entry.",
+    portraitPlaceholder: "TB",
+    portraitPlaceholderLabel: "Tyrone Brooks · no licensed portrait available",
+    sources: [
+      {
+        label: "U.S. DOJ · Brooks pleads guilty to fraud and tax charges",
+        url: "https://www.justice.gov/usao-ndga/pr/former-state-representative-tyrone-brooks-sr-pleads-guilty-fraud-and-tax-charges",
+      },
+      {
+        label: "Atlanta Magazine · sentencing report",
+        url: "https://www.atlantamagazine.com/news-culture-articles/tyrone-brooks-sentenced-to-federal-prison-for-a-year-and-a-day/",
+      },
+    ],
+  },
+  {
+    id: "blmgnf-property",
+    kicker: "REPORTED FINANCIAL SCRUTINY · ORGANIZATION",
+    name: "Black Lives Matter Global Network Foundation",
+    finding: "The Associated Press reported that the foundation's tax filing showed about $42 million in assets, and separately reported that it bought a $6 million Studio City property in October 2020 without publicly disclosing the purchase to donors at the time.",
+    context: "This is an organization-level transparency controversy, not a court finding or proof that founders stole donations or personally profited. An asset balance is not evidence of theft, and the foundation said the property served organizational purposes. No finding of misappropriation was reported; no licensed property image was located.",
+    portraitPlaceholder: "BLM",
+    portraitPlaceholderLabel: "Black Lives Matter Global Network Foundation · organization entry",
+    sources: [
+      {
+        label: "Associated Press · foundation financial filing",
+        url: "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVjJPaDcwQWZ5SnF1dUZvZ3JHS2hRa0kwWTQtUWJOSlJMZ2ZSSFc4QU1ySlhkR1FxQ0ZROFRlRzB6Mm8tVURwUzFDOUItUERMeGtZeG53VHg5YkdnUVhiQnh4eEpMYmhaY3hMRnY1cHF4X1VhZ3U5aklxZUtFMHBZOGplQmh1U3NQM2l2UnpPZVBRek1mNzNGMnZkLXd3YUV4Z1pFNWNfM0hhckpYZ09TY2VLaGVweXNGaG9OXzgzVlFwdHBtcVVKSk9R?oc=5",
+      },
+      {
+        label: "Associated Press · investigation of the $6 million property",
+        url: "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSG5oNm1Rb1hwSGV3Y0czQmhQcG9PQzVUWDZYT2I5UGJTaUdYZXNPOTloMl9pc3otNzlBNDhVWFpNbWdRcjJtbmdNd2tGU2ZjVFR0TnRHbXJPM1YxMmdGWHpabUxEQ1J2dDdIWTNfQnp1QTBsN3psMi1kTjJ5M0ZVeXM3UzQyVUhHX0lhc2RtTQ?oc=5",
+      },
+    ],
+  },
+  {
+    id: "kwame-kilpatrick",
+    kicker: "FEDERAL CONVICTION · DETROIT",
+    name: "Kwame Kilpatrick",
+    finding: "A federal jury convicted the former Detroit mayor of racketeering, bribery, extortion, fraud, and tax offenses tied to city contracting. He was sentenced to 28 years in 2013.",
+    context: "This was a public-corruption case involving Detroit city contracts. President Trump commuted Kilpatrick's prison sentence in 2021; the commutation did not erase his conviction.",
+    portraitPlaceholder: "KK",
+    portraitPlaceholderLabel: "Kwame Kilpatrick · no licensed portrait available",
+    sources: [
+      {
+        label: "FBI · Kilpatrick public-corruption case",
+        url: "https://www.fbi.gov/news/stories/public-corruption-inside-the-kwame-kilpatrick-case1",
+      },
+      {
+        label: "Associated Press · 2021 sentence commutation",
+        url: "https://apnews.com/article/donald-trump-kwame-kilpatrick-detroit-8441a18980a74aaa6503a5c098db25a1",
+      },
+    ],
+  },
+  {
+    id: "harry-thomas",
+    kicker: "GUILTY PLEA · PUBLIC-FUND THEFT",
+    name: "Harry Thomas Jr.",
+    finding: "The former D.C. councilmember pleaded guilty after diverting $353,500 from a public-private partnership for personal use. The money was designated for arts, youth recreation, and summer programs; he was sentenced to 38 months.",
+    context: "The case involved funds intended for District residents and youth programs, not a finding about any racial group.",
+    portraitPlaceholder: "HT",
+    portraitPlaceholderLabel: "Harry Thomas Jr. · no licensed portrait available",
+    sources: [
+      {
+        label: "U.S. DOJ · theft and tax sentencing",
+        url: "https://www.justice.gov/archive/usao/dc/news/2012/may/12-155.html",
+      },
+    ],
+  },
+  {
+    id: "jesse-jackson-jr",
+    kicker: "GUILTY PLEA · CAMPAIGN-FUND FRAUD",
+    name: "Jesse Jackson Jr.",
+    finding: "The former Illinois congressman pleaded guilty to conspiring to defraud his re-election campaigns of about $750,000, which he spent on personal items and expenses. He was sentenced to 30 months in 2013.",
+    context: "The case concerned campaign contributions and public trust. It documents Jackson's conduct, not wrongdoing by his constituents or community.",
+    portraitPlaceholder: "JJ",
+    portraitPlaceholderLabel: "Jesse Jackson Jr. · no licensed portrait available",
+    sources: [
+      {
+        label: "NPR · sentencing and campaign-fund case",
+        url: "https://www.npr.org/2013/08/14/212055227/jesse-jackson-jr-sentenced-to-30-months-in-prison",
+      },
+    ],
+  },
+  {
+    id: "monica-conyers",
+    kicker: "GUILTY PLEA · BRIBERY",
+    name: "Monica Conyers",
+    finding: "The former Detroit City Council member pleaded guilty to conspiracy to commit bribery in connection with her vote on a city sludge-disposal contract. She was sentenced to 37 months in 2010.",
+    context: "This was a municipal-contract bribery case involving a public official; it is not evidence that Detroit residents as a group were involved.",
+    portraitPlaceholder: "MC",
+    portraitPlaceholderLabel: "Monica Conyers · no licensed portrait available",
+    sources: [
+      {
+        label: "FBI · Conyers sentencing for bribery conspiracy",
+        url: "https://www.fbi.gov/detroit/press-releases/2010/de031010a.htm",
+      },
+    ],
+  },
+  {
+    id: "dianne-wilkerson",
+    kicker: "GUILTY PLEA · ATTEMPTED EXTORTION",
+    name: "Dianne Wilkerson",
+    finding: "The former Massachusetts state senator pleaded guilty to eight attempted-extortion counts involving $23,500 in bribes sought for official acts related to a Roxbury development project. She was sentenced to 42 months.",
+    context: "The court record concerns Wilkerson's official conduct and a local development project in her constituency; it does not support a group-wide claim.",
+    portraitPlaceholder: "DW",
+    portraitPlaceholderLabel: "Dianne Wilkerson · no licensed portrait available",
+    sources: [
+      {
+        label: "U.S. DOJ · guilty plea and Roxbury project",
+        url: "https://www.justice.gov/archive/usao/ma/news/2010/June/WilkersonPleaPR2.html",
+      },
+      {
+        label: "First Circuit · sentence appeal",
+        url: "https://media.ca1.uscourts.gov/pdf.opinions/11-1069P-01A.pdf",
+      },
+    ],
+  },
+  {
+    id: "ray-nagin",
+    kicker: "FEDERAL CONVICTION · PUBLIC CORRUPTION",
+    name: "C. Ray Nagin",
+    finding: "A federal jury convicted the former New Orleans mayor on 20 counts, including bribery, honest-services fraud, money laundering, and tax offenses tied to contractors. He was sentenced to 10 years in 2014.",
+    context: "The case concerned city contracting and public office. The Fifth Circuit upheld the conviction; this is an individual accountability record, not a claim about New Orleans residents.",
+    portraitPlaceholder: "RN",
+    portraitPlaceholderLabel: "C. Ray Nagin · no licensed portrait available",
+    sources: [
+      {
+        label: "U.S. DOJ · Nagin conviction",
+        url: "https://www.justice.gov/usao-edla/pr/c-ray-nagin-former-new-orleans-mayor-convicted-federal-bribery-honest-services-wire",
+      },
+      {
+        label: "U.S. DOJ · 10-year sentence",
+        url: "https://www.justice.gov/usao-edla/pr/former-new-orleans-mayor-c-ray-nagin-sentenced-10-years-imprisonment-conspiracy-bribery",
+      },
+      {
+        label: "Associated Press · appeal rejected",
+        url: "https://apnews.com/46b99cf0fbc34cbab5389ebd73f6ca26/court-rejects-appeal-former-new-orleans-mayor-ray-nagin",
+      },
+    ],
+  },
+  {
+    id: "daniel-holtzclaw",
+    kicker: "CONVICTION · SEXUAL ASSAULT",
+    name: "Daniel Holtzclaw",
+    finding: "An Oklahoma jury convicted the former police officer on 18 counts involving eight women. He was sentenced to 263 years in 2016; trial reporting identified the women as Black.",
+    context: "This entry concerns the specific assaults established at trial and the women who testified, not police officers or communities as a whole. The state appeals court affirmed the convictions and sentence in 2019.",
+    portraitPlaceholder: "DH",
+    portraitPlaceholderLabel: "Daniel Holtzclaw · no licensed portrait available",
+    sources: [
+      {
+        label: "Oklahoma Court of Criminal Appeals · affirmed conviction",
+        url: "https://law.justia.com/cases/oklahoma/court-of-appeals-criminal/2019/f-2016-62.html",
+      },
+      {
+        label: "Associated Press · verdict",
+        url: "https://apnews.com/general-news-national-bfc8b43fc51a49999eb0b07de01fffb4",
+      },
+    ],
+  },
+  {
+    id: "michael-slager",
+    kicker: "GUILTY PLEA · CIVIL-RIGHTS VIOLATION",
+    name: "Michael Slager",
+    finding: "The former North Charleston officer pleaded guilty to a federal civil-rights offense for the fatal shooting of Walter Scott, a Black man, during a traffic stop. Slager was sentenced to 20 years in 2017.",
+    context: "The state murder charge was dropped under the federal plea agreement. This entry describes the conviction in Scott's case, not police officers generally.",
+    portraitPlaceholder: "MS",
+    portraitPlaceholderLabel: "Michael Slager · no licensed portrait available",
+    sources: [
+      {
+        label: "U.S. DOJ · federal guilty plea",
+        url: "https://www.justice.gov/archives/opa/pr/former-north-charleston-south-carolina-police-officer-michael-slager-pleads-guilty-federal",
+      },
+      {
+        label: "U.S. DOJ · 20-year sentence",
+        url: "https://www.justice.gov/usao-sc/pr/former-north-charleston-south-carolina-police-officer-michael-slager-sentenced-20-years",
+      },
+    ],
+  },
+  {
+    id: "jason-van-dyke",
+    kicker: "CONVICTION · MURDER",
+    name: "Jason Van Dyke",
+    finding: "A jury convicted the former Chicago officer of second-degree murder for killing Laquan McDonald, a Black teenager. Van Dyke was sentenced to 81 months in 2019 and released in 2022 after serving part of the sentence.",
+    context: "The entry is about the verdict in McDonald's killing; it is not a statement about all police officers or Chicago residents.",
+    portraitPlaceholder: "JV",
+    portraitPlaceholderLabel: "Jason Van Dyke · no licensed portrait available",
+    sources: [
+      {
+        label: "Associated Press · sentence and release",
+        url: "https://apnews.com/article/laquan-mcdonald-jason-van-dyke-police-shooting-89fbc3c8be71480bfb0ee4385a672511",
+      },
+    ],
+  },
+  {
+    id: "amber-guyger",
+    kicker: "CONVICTION · MURDER",
+    name: "Amber Guyger",
+    finding: "A jury convicted the former Dallas officer of murdering Botham Jean, a Black man, in 2019 and sentenced her to 10 years. A Texas appeals court affirmed the conviction in 2021.",
+    context: "Guyger was paroled and released in October 2026. This is a court record about Jean's killing, not a claim about police officers as a group.",
+    portraitPlaceholder: "AG",
+    portraitPlaceholderLabel: "Amber Guyger · no licensed portrait available",
+    sources: [
+      {
+        label: "Texas Tribune · conviction and sentence",
+        url: "https://www.texastribune.org/2019/10/02/amber-guyger-sentencing-former-dallas-officer-gets-10-years-prison/",
+      },
+      {
+        label: "Texas Tribune · October 2026 parole release",
+        url: "https://www.texastribune.org/2026/10/01/texas-dallas-amber-guyger-dallas-officer-parole/",
+      },
+    ],
+  },
+  {
+    id: "derek-chauvin",
+    kicker: "CONVICTION & FEDERAL GUILTY PLEA · GEORGE FLOYD",
+    name: "Derek Chauvin",
+    finding: "Chauvin was convicted of second-degree murder in George Floyd's death and sentenced to 22½ years in state court. He separately pleaded guilty to a federal civil-rights offense and received a concurrent 21-year sentence.",
+    context: "Floyd was a Black man. The U.S. Supreme Court declined to review Chauvin's state conviction in 2023; this entry is limited to the findings in Floyd's case.",
+    portraitPlaceholder: "DC",
+    portraitPlaceholderLabel: "Derek Chauvin · no licensed portrait available",
+    sources: [
+      {
+        label: "Associated Press · Supreme Court declines review",
+        url: "https://apnews.com/article/supreme-court-george-floyd-officer-convicted-2c08301003ebb4ed83f53679e179d5e2",
+      },
+    ],
+  },
+  {
+    id: "travis-mcmichael",
+    kicker: "FEDERAL HATE-CRIME CONVICTION · AHMAUD ARBERY",
+    name: "Travis McMichael",
+    finding: "A federal jury convicted McMichael of hate crimes and related offenses in Ahmaud Arbery's killing. He was sentenced to life plus 10 years in 2022; the Eleventh Circuit upheld the federal convictions in 2025.",
+    context: "Arbery was a Black man. This entry summarizes McMichael's individual conviction and does not generalize his actions to a group.",
+    portraitPlaceholder: "TM",
+    portraitPlaceholderLabel: "Travis McMichael · no licensed portrait available",
+    sources: [
+      {
+        label: "U.S. DOJ · federal sentences in the Arbery case",
+        url: "https://www.justice.gov/archives/opa/pr/federal-judge-sentences-three-men-convicted-racially-motivated-hate-crimes-connection-killing",
+      },
+      {
+        label: "CBS News · appeals court affirms convictions",
+        url: "https://www.cbsnews.com/news/ahmaud-arbery-killers-appeals-court-upholds-hate-crime-convictions/",
+      },
+    ],
+  },
+  {
+    id: "dylann-roof",
+    kicker: "FEDERAL HATE-CRIME CONVICTION · MOTHER EMANUEL AME",
+    name: "Dylann Roof",
+    finding: "A federal jury convicted Roof on 33 counts for killing and attempting to kill worshippers at Mother Emanuel AME Church. Nine Black church members were killed; Roof was sentenced to death in 2017.",
+    context: "The Fourth Circuit affirmed the federal conviction and sentence. This is a record of the specific racist attack, not a generalization about any community.",
+    portraitPlaceholder: "DR",
+    portraitPlaceholderLabel: "Dylann Roof · no licensed portrait available",
+    sources: [
+      {
+        label: "U.S. DOJ · federal death sentence",
+        url: "https://www.justice.gov/usao-sc/pr/federal-jury-sentences-dylann-storm-roof-death",
+      },
+      {
+        label: "Fourth Circuit · affirmed conviction and sentence",
+        url: "https://www.ca4.uscourts.gov/opinions/252R1.U.pdf",
+      },
+    ],
+  },
+  {
+    id: "byron-beckwith",
+    kicker: "CONVICTION · MURDER OF MEDGAR EVERS",
+    name: "Byron De La Beckwith",
+    finding: "A Mississippi jury convicted Beckwith of murdering civil-rights leader Medgar Evers in 1994. The state Supreme Court affirmed the conviction in 1997.",
+    context: "Evers was a Black civil-rights leader. The conviction followed two earlier trials that ended without a verdict.",
+    portraitPlaceholder: "BB",
+    portraitPlaceholderLabel: "Byron De La Beckwith · no licensed portrait available",
+    sources: [
+      {
+        label: "Mississippi Supreme Court · affirmed conviction",
+        url: "https://law.justia.com/cases/mississippi/supreme-court/1997/conv4396.html",
+      },
+    ],
+  },
+  {
+    id: "edgar-killen",
+    kicker: "CONVICTION · CIVIL-RIGHTS MURDERS",
+    name: "Edgar Ray Killen",
+    finding: "A Mississippi jury convicted Killen of three manslaughter counts in the 1964 killings of civil-rights workers James Chaney, Andrew Goodman, and Michael Schwerner. He received three consecutive 20-year terms.",
+    context: "Chaney was Black; Goodman and Schwerner were white. The state Supreme Court affirmed the conviction and sentence in 2007.",
+    portraitPlaceholder: "EK",
+    portraitPlaceholderLabel: "Edgar Ray Killen · no licensed portrait available",
+    sources: [
+      {
+        label: "Mississippi Supreme Court · affirmed conviction",
+        url: "https://law.justia.com/cases/mississippi/supreme-court/2007/co40747.html",
+      },
+      {
+        label: "PBS · sentencing report",
+        url: "https://www.pbs.org/newshour/politics/law-jan-june05-killen_06-23",
+      },
+    ],
+  },
+  {
+    id: "r-kelly",
+    kicker: "FEDERAL CONVICTION · RACKETEERING",
+    name: "R. Kelly",
+    finding: "A New York federal jury convicted Kelly of racketeering and Mann Act violations in a scheme involving the recruitment and sexual abuse of girls and women. He was sentenced to 30 years in 2022; the Second Circuit affirmed in 2025.",
+    context: "Black women were among the victims and accusers in the case. This entry concerns the people harmed and the crimes established in court, not a claim about any community.",
+    portraitPlaceholder: "RK",
+    portraitPlaceholderLabel: "R. Kelly · no licensed portrait available",
+    sources: [
+      {
+        label: "U.S. DOJ · conviction",
+        url: "https://www.justice.gov/usao-edny/pr/r-kelly-convicted-all-counts-federal-jury-brooklyn",
+      },
+      {
+        label: "U.S. DOJ · 30-year sentence",
+        url: "https://www.justice.gov/usao-edny/pr/r-kelly-sentenced-30-years-prison",
+      },
+      {
+        label: "Second Circuit · affirmed conviction",
+        url: "https://law.justia.com/cases/federal/appellate-courts/ca2/22-1481/22-1481-2025-02-12.html",
+      },
+    ],
+  },
 ];
 
-const accountabilityStorageKey = "rooted-accountability-last-case";
-let previousAccountabilityId = "";
-try {
-  previousAccountabilityId = sessionStorage.getItem(accountabilityStorageKey) ?? "";
-} catch {
-  // Session storage is optional; the panel still chooses a random case.
+document.querySelector("#accountability-rotation-status").textContent =
+  `${accountabilityCases.length} sourced entries appear in a shuffled, no-repeat sequence when session storage is available, then reshuffle after every entry has appeared. Court outcomes and reported financial controversies are labeled separately, and each entry links to its evidence.`;
+
+const accountabilityStorageKey = "rooted-accountability-remaining";
+const accountabilityLastCaseKey = "rooted-accountability-last-case";
+const accountabilityIds = new Set(accountabilityCases.map((entry) => entry.id));
+function shuffleAccountabilityIds(excludedId = "") {
+  const shuffled = accountabilityCases
+    .map((entry) => entry.id)
+    .filter((id) => id !== excludedId);
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
 }
-const accountabilityChoices = accountabilityCases.filter((entry) => entry.id !== previousAccountabilityId);
-const accountabilityCase = accountabilityChoices[Math.floor(Math.random() * accountabilityChoices.length)];
+
+let previousAccountabilityId = "";
+let accountabilityOrder;
 try {
-  sessionStorage.setItem(accountabilityStorageKey, accountabilityCase.id);
+  previousAccountabilityId = sessionStorage.getItem(accountabilityLastCaseKey) ?? "";
+  const savedOrder = JSON.parse(sessionStorage.getItem(accountabilityStorageKey) ?? "null");
+  if (
+    Array.isArray(savedOrder)
+    && savedOrder.every((id) => accountabilityIds.has(id))
+    && new Set(savedOrder).size === savedOrder.length
+  ) {
+    accountabilityOrder = savedOrder.filter((id) => id !== previousAccountabilityId);
+  }
+} catch {
+  // Session storage is optional; the panel still chooses a shuffled case.
+}
+if (!accountabilityOrder?.length) {
+  accountabilityOrder = shuffleAccountabilityIds(previousAccountabilityId);
+}
+const accountabilityCaseId = accountabilityOrder.shift();
+const accountabilityCase = accountabilityCases.find((entry) => entry.id === accountabilityCaseId);
+try {
+  sessionStorage.setItem(accountabilityStorageKey, JSON.stringify(accountabilityOrder));
+  sessionStorage.setItem(accountabilityLastCaseKey, accountabilityCase.id);
 } catch {
   // Session storage is optional; the panel still renders.
 }
@@ -452,11 +807,26 @@ document.querySelector("#accountability-name").textContent = accountabilityCase.
 document.querySelector("#accountability-finding").textContent = accountabilityCase.finding;
 document.querySelector("#accountability-context").textContent = accountabilityCase.context;
 const accountabilityPortrait = document.querySelector("#accountability-portrait");
-accountabilityPortrait.src = accountabilityCase.portrait;
-accountabilityPortrait.alt = accountabilityCase.portraitAlt;
+const accountabilityPortraitPlaceholder = document.querySelector("#accountability-portrait-placeholder");
 const accountabilityPhotoCredit = document.querySelector("#accountability-photo-credit");
-accountabilityPhotoCredit.href = accountabilityCase.portraitUrl;
-accountabilityPhotoCredit.textContent = accountabilityCase.portraitCredit;
+const accountabilityPortraitCaption = document.querySelector("#accountability-portrait-caption");
+const hasAccountabilityPortrait = Boolean(accountabilityCase.portrait);
+accountabilityPortrait.hidden = !hasAccountabilityPortrait;
+accountabilityPortraitCaption.hidden = !hasAccountabilityPortrait;
+accountabilityPortraitPlaceholder.hidden = hasAccountabilityPortrait;
+if (hasAccountabilityPortrait) {
+  accountabilityPortrait.src = accountabilityCase.portrait;
+  accountabilityPortrait.alt = accountabilityCase.portraitAlt;
+  accountabilityPhotoCredit.href = accountabilityCase.portraitUrl;
+  accountabilityPhotoCredit.textContent = accountabilityCase.portraitCredit;
+} else {
+  const placeholderInitials = document.createElement("span");
+  placeholderInitials.textContent = accountabilityCase.portraitPlaceholder;
+  const placeholderNote = document.createElement("small");
+  placeholderNote.textContent = "No licensed image available";
+  accountabilityPortraitPlaceholder.replaceChildren(placeholderInitials, placeholderNote);
+  accountabilityPortraitPlaceholder.setAttribute("aria-label", accountabilityCase.portraitPlaceholderLabel);
+}
 document.querySelector("#accountability-sources").replaceChildren(...accountabilityCase.sources.map((source) => {
   const link = document.createElement("a");
   link.href = source.url;
